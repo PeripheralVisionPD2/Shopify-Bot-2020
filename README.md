@@ -5,5 +5,5 @@ Simple Shopify bot using 'request-promise' and 'cheerio'.
 2. Add captcha harvester
 3. Add multiple profiles
 4. Build UI in Electron
-5. Improve keyword search functionality
+5. Improve keyword search logic
 6. Add checkout via product link
