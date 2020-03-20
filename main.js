@@ -222,8 +222,8 @@ function submitDetails(checkout) {
         },
         function(e, r, b) {
           //this next part creates a shipping rate
-          var zip = "06377";
-          var state = "CT";
+          var zip = "11111";
+          var state = "NY";
           request.get(
             {
               uri: `https://kith.com/cart/shipping_rates.json?shipping_address%5Bzip%5D=${zip}&shipping_address%5Bcountry%5D=US&shipping_address%5Bprovince%5D=${state}`,
@@ -248,9 +248,7 @@ function submitDetails(checkout) {
                   uri: checkout,
                   headers: {
                     "User-Agent":
-                      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36",
-                    origin: "https://bdgastore.com",
-                    referer: "https://bdgastore.com/"
+                      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36"
                   },
                   jar: cookieJar,
                   followAllRedirects: true,
